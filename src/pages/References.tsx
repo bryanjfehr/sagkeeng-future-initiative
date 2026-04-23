@@ -44,16 +44,16 @@ const References: React.FC = () => {
       url: "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=262&FY=2024-2025&DOC=Audited%20consolidated%20financial%20statements&lang=eng"
     },
     {
-      fact: "The 1994 TLE Settlement Agreement Trust was dissolved in 2019, and all assets were transferred back to the Nation's general control.",
-      url: "https://sagkeeng.ca/2025/12/notice-of-2nd-ratification-vote-treaty-land-entitlement-settlement-agreement-and-trust-agreement/"
+      fact: "Long Plain First Nation's 1994 TLE Settlement Agreement Trust was dissolved/expired in 2019, with all assets transferred back to the Nation's general control.",
+      url: "https://lpband.ca/long-plain-trust/"
     },
     {
-      fact: "The $1.3 million in questionable spending uncovered in the 2019 Health Centre audit included federal health funds used for employees' personal speeding tickets, $400 monthly travel allowances paid alongside actual travel reimbursements, and unsecured $1,000 cash advances.",
+      fact: "The $1.3 million in questionable spending uncovered in the 2019 Sagkeeng Health Centre audit included federal health funds used for employees' personal speeding tickets, unwarranted $400 monthly travel allowances paid alongside actual reimbursements, and unsecured cash advances.",
       url: "https://www.cbc.ca/news/canada/manitoba/sagkeeng-health-centre-audit-1.5169275"
     },
     {
-      fact: "Further misallocations in the Health Centre included funds used to pay internal staff \"finders fees\" for writing standard grant proposals, and for expenses billed at commercial escape rooms, toy stores, movie theaters, and for Caribbean cruise lines.",
-      url: "https://www.cbc.ca/news/canada/manitoba/sagkeeng-health-centre-audit-1.5169275"
+      fact: "The Sagkeeng health centre director was previously the COO of the Virginia Fontaine Addictions Treatment Foundation during a 1990s scandal involving millions in misappropriated funds for luxury cruises, escape rooms, and grant \"finders fees\".",
+      url: "https://globalnews.ca/news/5377470/director-named-in-sagkeeng-health-centre-audit-was-former-coo-of-virginia-fontaine-addictions-treatment-foundation/"
     },
     {
       fact: "The 2025 financial statements state the Nation failed to comply with the First Nations Financial Transparency Act deadline, as the audit report was not dated until February 17, 2026.",

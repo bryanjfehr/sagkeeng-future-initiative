@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, TrendingUp, Home, Droplets, ArrowRight, Gavel, ExternalLink, ShieldCheck } from 'lucide-react';
 import { citations } from '../data/reportData';
 
@@ -42,10 +43,10 @@ const PathForward: React.FC = () => {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tight pt-10">
+          <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tight pt-10 text-center">
             THE <span className="text-earth-orange">PATH FORWARD</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed text-center">
             A Strategic Roadmap for Financial Sovereignty, Capital Efficiency, and Community Restoration (2026-2030)
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -57,14 +58,14 @@ const PathForward: React.FC = () => {
 
       {/* Link to Tsuut'ina comparative analysis */}
       <section className="py-12 bg-soft-sage/10 text-center">
-        <h2 className="text-3xl font-black text-dark-navy mb-4">WANT TO SEE A SUCCESSFUL MODEL?</h2>
-        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        <h2 className="text-3xl font-black text-dark-navy mb-4 text-center">WANT TO SEE A SUCCESSFUL MODEL?</h2>
+        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto text-center px-4">
           Explore how the Tsuut'ina Nation utilized strict financial controls and insulated capital development to unlock billions in master-planned community growth.
         </p>
-        <a href="/tsuutina.html" className="inline-flex items-center justify-center bg-dark-navy hover:bg-forest-green text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:-translate-y-1">
+        <Link to="/tsuutina.html" className="inline-flex items-center justify-center bg-dark-navy hover:bg-forest-green text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:-translate-y-1">
           VIEW THE TSUUT'INA PARADIGM
           <ArrowRight className="ml-2 h-5 w-5" />
-        </a>
+        </Link>
       </section>
 
       {/* The Roadmap - Phases */}
@@ -147,10 +148,10 @@ const PathForward: React.FC = () => {
               <Shield className="mr-4 text-earth-orange h-10 w-10" />
               THE CAPITAL EFFICIENCY METRIC
             </h2>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20 text-center">
               <div className="text-center">
-                <p className="text-gray-400 uppercase tracking-widest text-sm mb-4">Mandatory Audit Disclosure Formula</p>
-                <div className="text-4xl md:text-5xl font-mono text-earth-orange">
+                <p className="text-gray-400 uppercase tracking-widest text-sm mb-4 text-center">Mandatory Audit Disclosure Formula</p>
+                <div className="text-4xl md:text-5xl font-mono text-earth-orange text-center">
                   Cost per Unit = <span className="text-white">(Total Project Capital)</span> / <span className="text-white">(Units Delivered)</span>
                 </div>
               </div>
@@ -165,14 +166,14 @@ const PathForward: React.FC = () => {
       {/* Final Call to Action */}
       <section className="py-24 text-center">
         <h2 className="text-4xl font-black text-dark-navy mb-8 text-center">READY TO RESTORE ACCOUNTABILITY?</h2>
-        <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <a href="/request-audit" className="bg-red-600 hover:bg-red-700 text-white font-black py-5 px-10 rounded-2xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
+        <div className="flex flex-col sm:flex-row justify-center gap-6 px-4">
+          <Link to="/request-audit" className="bg-red-600 hover:bg-red-700 text-white font-black py-5 px-10 rounded-2xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             FILE A FORMAL AUDIT REQUEST
             <ArrowRight className="ml-3 h-6 w-6" />
-          </a>
-          <a href="/" className="bg-soft-sage hover:bg-soft-sage/80 text-dark-navy font-bold py-5 px-10 rounded-2xl transition-all flex items-center justify-center">
+          </Link>
+          <Link to="/" className="bg-soft-sage hover:bg-soft-sage/80 text-dark-navy font-bold py-5 px-10 rounded-2xl transition-all flex items-center justify-center">
             REVIEW THE AUDIT DATA
-          </a>
+          </Link>
         </div>
       </section>
     </div>

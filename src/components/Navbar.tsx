@@ -30,64 +30,48 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-forest-green text-white z-50 shadow-md" aria-label="Main Navigation">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 w-full bg-forest-green text-white z-50 shadow-md border-b border-white/10" aria-label="Main Navigation">
+      <div className="px-6 sm:px-12 lg:px-16 w-full">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <RouterLink to="/" className="font-bold text-sm md:text-lg leading-tight truncate max-w-[200px] md:max-w-none hover:text-earth-orange transition-colors">
+            <RouterLink to="/" className="font-bold text-sm md:text-lg leading-tight hover:text-earth-orange transition-colors">
               {SITE_TITLE}
             </RouterLink>
           </div>
           
           <div className="hidden lg:block">
-            <div className="ml-10 flex items-center space-x-4">
-              {isHome ? (
-                navLinks.map((link) => (
-                  <ScrollLink
-                    key={link.to}
-                    to={link.to}
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-earth-orange transition-colors cursor-pointer"
-                    aria-label={`Scroll to ${link.title}`}
-                  >
-                    {link.title}
-                  </ScrollLink>
-                ))
-              ) : (
-                <RouterLink
-                  to="/"
-                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-earth-orange transition-colors"
-                >
-                  Home
-                </RouterLink>
-              )}
+            <div className="flex items-center space-x-2">
+              <RouterLink
+                to="/"
+                className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${location.pathname === '/' ? 'bg-earth-orange shadow-lg' : 'hover:bg-white/10'}`}
+              >
+                Home
+              </RouterLink>
               
               <RouterLink
                 to="/path-forward"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/path-forward' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
+                className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${location.pathname === '/path-forward' ? 'bg-earth-orange shadow-lg' : 'hover:bg-white/10'}`}
               >
-                Sovereignty Path
+                Path Forward
               </RouterLink>
 
               <RouterLink
-                to="/tsuutina.html"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/tsuutina.html' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
+                to="/legal-framework.html"
+                className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${location.pathname === '/legal-framework.html' ? 'bg-earth-orange shadow-lg' : 'hover:bg-white/10'}`}
               >
-                Tsuut'ina Model
+                Legal Framework
               </RouterLink>
 
               <RouterLink
                 to="/references.html"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === '/references.html' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
+                className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${location.pathname === '/references.html' ? 'bg-earth-orange shadow-lg' : 'hover:bg-white/10'}`}
               >
                 Verified Citations
               </RouterLink>
 
               <RouterLink
                 to="/request-audit"
-                className="ml-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-bold flex items-center transition-all animate-pulse"
+                className="ml-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-xs font-black uppercase tracking-widest flex items-center shadow-xl transition-all hover:scale-105 active:scale-95"
                 aria-label={DEMAND_AUDIT_CTA}
               >
                 {DEMAND_AUDIT_CTA}
@@ -143,15 +127,15 @@ const Navbar: React.FC = () => {
               onClick={handleLinkClick}
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${location.pathname === '/path-forward' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
             >
-              Sovereignty Path
+              Path Forward
             </RouterLink>
 
             <RouterLink
-              to="/tsuutina.html"
+              to="/legal-framework.html"
               onClick={handleLinkClick}
-              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${location.pathname === '/tsuutina.html' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${location.pathname === '/legal-framework.html' ? 'bg-earth-orange' : 'hover:bg-earth-orange'}`}
             >
-              Tsuut'ina Model
+              Legal Framework
             </RouterLink>
 
             <RouterLink

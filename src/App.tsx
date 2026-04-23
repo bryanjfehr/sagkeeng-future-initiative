@@ -3,7 +3,7 @@
  * © 2026 Sagkeeng Future Initiative.
  * Licensed under MIT and Proprietary Community License.
  */
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,6 +12,7 @@ import RequestAudit from './pages/RequestAudit'
 import PathForward from './pages/PathForward'
 import References from './pages/References'
 import Tsuutina from './pages/Tsuutina'
+import LegalFramework from './pages/LegalFramework'
 import BackToTop from './components/BackToTop'
 
 // Scroll to top on route change
@@ -25,7 +26,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <ScrollToTop />
       <div className="min-h-screen bg-soft-sage font-sans flex flex-col">
         <Navbar />
@@ -36,12 +37,13 @@ function App() {
             <Route path="/path-forward" element={<PathForward />} />
             <Route path="/references.html" element={<References />} />
             <Route path="/tsuutina.html" element={<Tsuutina />} />
+            <Route path="/legal-framework.html" element={<LegalFramework />} />
           </Routes>
         </main>
         <Footer />
         <BackToTop />
       </div>
-    </BrowserRouter>
+    </Router>
   )
 }
 

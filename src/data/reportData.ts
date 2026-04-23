@@ -43,7 +43,8 @@ export const citations: Citation[] = [
   { id: 34, text: "Assessment and Investigation Services Branch (AISB) - wiki", url: "https://wiki.gccollab.ca/Assessment_and_Investigation_Services_Branch_(AISB)", archiveUrl: "https://web.archive.org/web/20260421000000/https://wiki.gccollab.ca/Assessment_and_Investigation_Services_Branch_(AISB)", archiveDate: "2026-04-21" },
   { id: 35, text: "Contact Indigenous Services Canada", url: "https://www.sac-isc.gc.ca/eng/1291132820288/1603310905799", archiveUrl: "https://web.archive.org/web/20260421000000/https://www.sac-isc.gc.ca/eng/1291132820288/1603310905799", archiveDate: "2026-04-21" },
   { id: 36, text: "Assessment and Investigation Services Branch (AISB) - wiki (Desktop)", url: "https://wiki.gccollab.ca/index.php?title=Assessment_and_Investigation_Services_Branch_(AISB)&mobileaction=toggle_view_desktop", archiveUrl: "https://web.archive.org/web/20260421000000/https://wiki.gccollab.ca/index.php?title=Assessment_and_Investigation_Services_Branch_(AISB)&mobileaction=toggle_view_desktop", archiveDate: "2026-04-21" },
-  { id: 37, text: "Default Management Prevention Pilot Project (DMPPP)", url: "https://fnfmb.com/en/services/default-management-prevention-pilot-project", archiveUrl: "https://web.archive.org/web/20260421000000/https://fnfmb.com/en/services/default-management-prevention-pilot-project", archiveDate: "2026-04-21" }
+  { id: 37, text: "Default Management Prevention Pilot Project (DMPPP)", url: "https://fnfmb.com/en/services/default-management-prevention-pilot-project", archiveUrl: "https://web.archive.org/web/20260421000000/https://fnfmb.com/en/services/default-management-prevention-pilot-project", archiveDate: "2026-04-21" },
+  { id: 38, text: "Long Plain First Nation - Trust Management", url: "https://lpband.ca/long-plain-trust/", archiveUrl: "https://web.archive.org/web/20260421000000/https://lpband.ca/long-plain-trust/", archiveDate: "2026-04-21" }
 ];
 
 export interface ContentItem {
@@ -185,7 +186,7 @@ export const reportData: ReportSection[] = [
       },
       {
         type: "paragraph",
-        text: "However, the historical context of regional trust management raises critical concerns. For example, in the nearby Long Plain First Nation, previous trusts such as the 1994 TLE Settlement Agreement Trust were dissolved in 2019, with all assets transferred directly back to that Nation's general control—a precedent that underscores the acute risk of administrative absorption. Furthermore, the financial statements reveal that Sagkeeng has already taken on significant debt to pursue various claims against the federal government. The 2025 audit details a loan of $2,298,598 incurred for professional services related to a 1923–1926 surrender claim, and another loan of $3,717,484 authorized to pursue a broader land settlement claim. The Nation expects to settle these specific loans utilizing the proceeds from successful legal settlements. (https://fhqdev.com/assets/keynote-speaker-presentations-dennis-meeches-indigenous-economic-development-forum-march-2023.pdf, https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=262&FY=2024-2025&DOC=Audited%20consolidated%20financial%20statements&lang=eng)"
+        text: "However, the historical context of regional trust management raises critical concerns. For example, in the nearby Long Plain First Nation, previous trusts such as the 1994 TLE Settlement Agreement Trust were dissolved/expired in 2019, with all assets transferred directly back to that Nation's general control—a precedent that underscores the acute risk of administrative absorption. Furthermore, the financial statements reveal that Sagkeeng has already taken on significant debt to pursue various claims against the federal government. The 2025 audit details a loan of $2,298,598 incurred for professional services related to a 1923–1926 surrender claim, and another loan of $3,717,484 authorized to pursue a broader land settlement claim. The Nation expects to settle these specific loans utilizing the proceeds from successful legal settlements. (https://lpband.ca/long-plain-trust/, https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=262&FY=2024-2025&DOC=Audited%20consolidated%20financial%20statements&lang=eng)"
       },
       {
         type: "paragraph",
@@ -416,7 +417,7 @@ export const reportData: ReportSection[] = [
       },
       {
         type: "paragraph",
-        text: "Audit findings included: (https://www.cbc.ca/news/canada/manitoba/sagkeeng-health-centre-audit-1.5169275)"
+        text: "Audit findings from the 2019 report included: (https://www.cbc.ca/news/canada/manitoba/sagkeeng-health-centre-audit-1.5169275)"
       },
       {
         type: "list",
@@ -424,13 +425,12 @@ export const reportData: ReportSection[] = [
           "Payments utilizing federal health funds for employees' personal speeding tickets.",
           "Unwarranted $400 monthly \"travel allowances\" paid to staff concurrently with reimbursements for actual travel expenses, representing double-dipping.",
           "Unsecured cash advances of $1,000 to individuals.",
-          "Tens of thousands of dollars paid out as external \"finders fees\" to internal staff merely for writing standard government grant proposals.",
-          "Extensive \"training\" and travel expenses billed at commercial escape rooms, toy stores, movie theaters, and for Caribbean cruise lines."
+          "Payments made with \"no rationale or support\" and miscellaneous unverified expenses."
         ]
       },
       {
         type: "paragraph",
-        text: "Most concerningly from a governance perspective, investigative media identified that the director of the health center involved in this 2019 audit had previously been implicated in the infamous 1990s Virginia Fontaine Addictions Treatment Foundation scandal, wherein millions of public dollars were spent on luxury Caribbean cruises masquerading as employee training. (https://globalnews.ca/news/5377470/director-named-in-sagkeeng-health-centre-audit-was-former-coo-of-virginia-fontaine-addictions-treatment-foundation/)"
+        text: "Most concerningly from a governance perspective, investigative media identified that the director of the health center involved in this 2019 audit had previously been implicated in the infamous 1990s Virginia Fontaine Addictions Treatment Foundation scandal. That earlier scandal involved millions in federal funds misappropriated for luxury Caribbean cruises, expensive training at escape rooms, toy stores, movie theaters, and \"finders fees\" for grant proposals. (https://globalnews.ca/news/5377470/director-named-in-sagkeeng-health-centre-audit-was-former-coo-of-virginia-fontaine-addictions-treatment-foundation/)"
       },
       {
         type: "paragraph",
